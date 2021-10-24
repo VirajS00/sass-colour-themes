@@ -1,0 +1,8 @@
+# Ignore the node_modules
+node_modules
+
+development
+dist
+
+# Ignore parcel's cache folder
+.cache
