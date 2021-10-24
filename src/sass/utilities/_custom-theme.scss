@@ -7,45 +7,9 @@
 @each $theme, $components in $colours {
 	.#{$theme} {
 		@each $component, $value in $components {
-			@each $el, $value in $value {
-				--clr-#{$component}-#{$el}: #{$value};
+			@each $prop, $value in $value {
+				--clr-#{$component}-#{$prop}: #{$value};
 			}
 		}
 	}
 }
-
-// .summer-day {
-// 	@each $colour, $themes in $colours {
-// 		@each $theme, $value in $themes {
-// 			@if $theme == 'summerDay' {
-// 				@each $el, $value in $value {
-// 					--clr-#{$colour}-#{$el}: #{$value};
-// 				}
-// 			}
-// 		}
-// 	}
-// }
-
-// .winter-night {
-// 	@each $colour, $themes in $colours {
-// 		@each $theme, $value in $themes {
-// 			@if $theme == 'winterNight' {
-// 				@each $el, $value in $value {
-// 					--clr-#{$colour}-#{$el}: #{$value};
-// 				}
-// 			}
-// 		}
-// 	}
-// }
-
-// .summer-night {
-// 	@each $colour, $themes in $colours {
-// 		@each $theme, $value in $themes {
-// 			@if $theme == 'summerNight' {
-// 				@each $el, $value in $value {
-// 					--clr-#{$colour}-#{$el}: #{$value};
-// 				}
-// 			}
-// 		}
-// 	}
-// }
