@@ -1,4 +1,69 @@
+@use '../abstracts' as *;
+
 .dots-container {
 	width: 30%;
-	background-color: red;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 1em;
+}
+
+.dot-check {
+	display: none;
+}
+
+.dot {
+	@each $theme, $colors in $dotColors {
+		@each $el, $color in $colors {
+			--#{$el}-#{$theme}-clr: #{$color};
+		}
+	}
+
+	display: block;
+	height: 1.2em;
+	width: 1.2em;
+	border-radius: 50%;
+	position: relative;
+
+	&::after {
+		content: attr(data-tooltip-label);
+		position: absolute;
+		left: 1.5em;
+		top: 50%;
+		width: fit-content;
+		min-width: 150px;
+		background-color: var(--clr-tooltip-bg);
+		color: var(--clr-tooltip-text);
+		transform: translateY(-50%);
+		padding: 0.3em 0.5em;
+		text-align: center;
+		border-radius: 100vh;
+		opacity: 0;
+		transition: opacity 250ms ease;
+	}
+
+	&:hover::after {
+		opacity: 1;
+	}
+
+	&#winterDay {
+		background-color: var(--dot-winterDay-clr);
+	}
+
+	&#summerDay {
+		background-color: var(--dot-summerDay-clr);
+	}
+
+	&#winterNight {
+		background-color: var(--dot-winterNight-clr);
+	}
+
+	&#summerNight {
+		background-color: var(--dot-summerNight-clr);
+	}
+}
+
+.dot-check:checked + .dot {
+	box-shadow: 0 0 0 0.1em var(--clr-body-bg), 0 0 0 0.25em #e70000;
 }

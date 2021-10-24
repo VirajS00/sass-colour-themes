@@ -4,23 +4,23 @@
 	padding: 2em 3em;
 	border-radius: 3em;
 	position: relative;
-}
 
-.content-container h1 {
-	color: var(--clr-contentContainer-title);
+	h1 {
+		color: var(--clr-contentContainer-title);
+	}
 }
 
 .logo-link {
 	position: absolute;
 	bottom: 1.5em;
 	right: 1.5em;
-}
 
-.logo-link svg {
-	opacity: 0.8;
-	transition: opacity 250ms ease;
-}
+	svg {
+		opacity: 0.8;
+		transition: opacity 250ms ease;
+	}
 
-.logo-link:hover svg {
-	opacity: 1;
+	&:hover svg {
+		opacity: 1;
+	}
 }
