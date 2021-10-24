@@ -1,0 +1,60 @@
+$colours: (
+	body: (
+		winterDay: (
+			bg: hsl(195 100% 95%)
+		),
+		summerDay: (
+			bg: hsl(29 100% 91%)
+		),
+		winterNight: (
+			bg: hsl(209 78% 13%)
+		),
+		summerNight: (
+			bg: hsl(44 45% 15%)
+		)
+	),
+	contentContainer: (
+		winterDay: (
+			bg: hsl(195 49% 80%),
+			text: hsl(216 100% 14%),
+			title: hsl(216 100% 19%)
+		),
+		summerDay: (
+			bg: hsl(29 44% 61%),
+			text: hsl(30 41% 11%),
+			title: hsl(30 58% 12%)
+		),
+		winterNight: (
+			bg: hsl(209 70% 26%),
+			text: hsl(216 65% 89%),
+			title: hsl(216 100% 80%)
+		),
+		summerNight: (
+			bg: hsl(44 30% 33%),
+			text: hsl(47 100% 87%),
+			title: hsl(47 100% 72%)
+		)
+	),
+	button: (
+		winterDay: (
+			bg: hsl(216 100% 12% / 0.8),
+			bgHover: hsl(216 100% 12% / 1),
+			text: hsl(213 100% 94%)
+		),
+		summerDay: (
+			bg: hsl(29 38% 34% / 0.8),
+			bgHover: hsl(29 38% 34% / 1),
+			text: hsl(28 100% 93%)
+		),
+		winterNight: (
+			bg: hsl(209 73% 60% / 0.8),
+			bgHover: hsl(209 73% 60% / 1),
+			text: hsl(210 63% 7%)
+		),
+		summerNight: (
+			bg: hsl(44 72% 69% / 0.8),
+			bgHover: hsl(44 72% 69% / 1),
+			text: hsl(44 33% 18%)
+		)
+	)
+);

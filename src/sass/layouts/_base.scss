@@ -1,0 +1,22 @@
+@use '../utilities';
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+body {
+	background-color: var(--clr-body-bg);
+	font-family: var(--font-pmry);
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.container {
+	display: flex;
+	max-width: 1024px;
+	gap: 1em;
+}
