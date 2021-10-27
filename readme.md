@@ -52,6 +52,7 @@ const themes = [
 
 in order to *add a theme*, all you need to do is:
 1. Add your own colours and theme name in the `_colours.scss` file
+	- The CSS for the different classes (Based on theme name) with theme specific custom properties will be generated automatically after adding a theme to the SASS Map.
 2. Add the theme name in the themes array (same as in the SASS Map) to the `themes.js` file.
 3. Add the custom properties to the new elements as follows:
 	- The CSS custom properties will be genrated based on the SASS Map, so the `body bg`(from the above map) custom property would be `--clr-body-bg: hsl(195 100% 95%);`
