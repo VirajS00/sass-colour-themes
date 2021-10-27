@@ -9,7 +9,7 @@ const themes = [
 
 let checkBox, dot;
 
-// let theme = localStorage.getItem('theme');
+let theme = localStorage.getItem('theme');
 
 const template = document.querySelector('template.dot');
 let clone = template.content.cloneNode(true);
@@ -36,11 +36,20 @@ const checkBoxes = document.querySelectorAll('.dot-check');
 const changeTheme = (theme) => {
 	document.body.removeAttribute('class');
 	document.body.classList.add(theme);
+	localStorage.setItem('theme', theme);
 };
 
 checkBoxes.forEach((box) => {
+	theme = localStorage.getItem('theme');
+	const themeName = box.id;
+	if (theme === null) {
+		changeTheme('winterDay');
+		document.querySelector('.dot-check#winterDay').checked = true;
+	} else {
+		changeTheme(theme);
+		document.querySelector(`.dot-check#${theme}`).checked = true;
+	}
 	box.addEventListener('change', () => {
-		const themeName = box.id;
 		changeTheme(themeName);
 	});
 });
