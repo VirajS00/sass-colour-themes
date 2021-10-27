@@ -2,6 +2,8 @@
 
 The idea behind this project is to make theme generation easier using SASS(SCSS) Maps.
 
+The project can be seen [here](sass-custom-themes.netlify.app)
+
 This project is setup using parcel, for more info check out [this repository](https://github.com/kevin-powell/sass-made-easy).
 
 ## How to use this repo
