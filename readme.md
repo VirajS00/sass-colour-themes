@@ -16,7 +16,7 @@ This project is setup using parcel, for more info check out [this repository](ht
 
 A sample SASS Map for a theme looks like this (in the `src/sass/abstracts/_colours.scss` file):
 
-```css
+```scss
 winterDay: (
     body: (
         bg: hsl(195 100% 95%)
