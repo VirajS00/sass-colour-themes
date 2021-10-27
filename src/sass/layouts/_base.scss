@@ -5,6 +5,7 @@
 body {
 	background-color: var(--clr-body-bg);
 	font-family: var(--font-pmry);
+	transition: background-color 150ms ease;
 }
 
 main {
