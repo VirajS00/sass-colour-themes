@@ -9,10 +9,6 @@
 	gap: 1em;
 }
 
-.dot-check {
-	display: none;
-}
-
 .dot {
 	position: relative;
 	display: block;
@@ -41,24 +37,12 @@
 	&:hover::after {
 		opacity: 1;
 	}
-
-	&#winterDay {
-		background-color: var(--dot-winterDay-clr);
-	}
-
-	&#summerDay {
-		background-color: var(--dot-summerDay-clr);
-	}
-
-	&#winterNight {
-		background-color: var(--dot-winterNight-clr);
-	}
-
-	&#summerNight {
-		background-color: var(--dot-summerNight-clr);
-	}
 }
 
-.dot-check:checked + .dot {
-	box-shadow: 0 0 0 0.1em var(--clr-body-bg), 0 0 0 0.25em #e70000;
+.dot-check {
+	display: none;
+
+	&:checked + .dot {
+		box-shadow: 0 0 0 0.1em var(--clr-body-bg), 0 0 0 0.25em #e70000;
+	}
 }

@@ -7,8 +7,8 @@
 	border-radius: 100vh;
 	transition: background-color 250ms ease;
 	margin: 1em 0;
-}
 
-.button:hover {
-	background-color: var(--clr-button-bgHover);
+	&:hover {
+		background-color: var(--clr-button-bgHover);
+	}
 }
